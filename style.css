@@ -26,6 +26,10 @@ body{
   background-clip: padding-box;
 }
 
+#number{
+	width:60px;
+}
+
 #comment{
   min-height:100px;
   width:90%;

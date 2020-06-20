@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey-Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <head>
+        <h1 class="title" id="title">Videogame Survey Form</h1>
+    <p class="title" id="description" >Thank you for taking a survey on videogames</p>
+  </head>
+    <form id="survey-form" class="fullcard">
+      <label id="name-label"> Name
+      <input class="form" id="name" type="text" placeholder="First name" required ></input>
+      <input class="form" id="lastname" type="text" placeholder="Surname" required></input><br></label>
+      <label id="email-label"> Email
+      <input class="form" id="email" type="email" placeholder="Email address" required></input><br></label>
+      <label id="number-label"> Age
+      <input class="form" id="number" type="number" min="10" max="119" placeholder="Age" required></input></label>
+
+      <p>Which genre do you play the most?<p>
+      <select id="dropdown" class="form"required>
+        <option disabled selected value>Select genre</option>
+        <option value="action">Action</option>
+        <option value="sport">Sport</option>
+        <option value="Battle-Royale">Battle Royale</option>
+        <option value="Role-Playing">Role Playing</option>
+        </select><br>
+        
+<p> How much are you willing to pay on a game?</p>
+     <label>   
+       <input name="price" type="radio" value="0" > Free-to-play only</label>
+    <label>
+      <br> <input name="price" type="radio" value="10"> £10</label>
+    <label>
+      <br> <input name="price" type="radio" value="25"> £25</label>
+    <label> 
+      <br> <input name="price" type="radio" value="50"> £50</label>
+    <label>
+      <br> <input name="price" type="radio" value="50+"> £50+</label>
+    
+<p> Which consoles do you play on?</p>
+  <label>   
+       <input name="console" value="PC" type="checkbox" > PC</label>
+    <label>
+      <br> <input name="console" value="Xbox" type="checkbox"> Xbox</label>
+    <label>
+      <br> <input name="console" value="PS" type="checkbox"> PlayStation</label>
+    <label> 
+      <br> <input name="console" value="Switch" type="checkbox">Nintendo Switch</label><br>
+
+<label id="comments"><p> Do you have any questions about this survey?
+  <textarea  id="comment" placeholder="Please enter it here..." required ></textarea></p>
+
+  <button type="submit" id='submit'>Submit</button>
+  
+</form>
+    
+  
+</body>
+<!-- partial -->
+  
+</body>
+</html>

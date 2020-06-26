@@ -11,12 +11,14 @@
 <body>
   <head>
         <h1 class="title" id="title">Videogame Survey Form</h1>
-    <p class="title" id="description" >Thank you for the time you are taking to complete this evaluation. Your answers will help us gather more data on videogames. All answers will be held in the strictest confidentiality.</p>
+    <p class="title" id="description" >Thank you for the time you are taking to complete this evaluation. <br>Your answers will help us gather more data on videogames.<br> All answers will be held in the strictest confidentiality.</p>
   </head>
     <form id="survey-form" class="fullcard">
       <label id="name-label"> Name
-      <input class="form" id="name" type="text" placeholder="First name" required ></input>
-      <input class="form" id="lastname" type="text" placeholder="Surname" required></input><br></label>
+        <div id='container'>
+      <div id="item1"><input class="form" id="name" type="text" placeholder="First name" required ></input></div>
+      <div id="item2"><input class="form" id="lastname" type="text" placeholder="Surname" required></input></div>
+      </div><br></label>
       <label id="email-label"> Email
       <input class="form" id="email" type="email" placeholder="Email address" required></input><br></label>
       <label id="number-label"> Age
